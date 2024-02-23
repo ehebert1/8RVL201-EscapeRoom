@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.UI;
 
@@ -67,6 +69,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         [SerializeField]
         [Tooltip("The reference to the action of scrolling UI with this controller.")]
         InputActionReference m_UIScroll;
+
+        [SerializeField]
+        [Tooltip("Open The Menu.")]
+        InputActionReference OpenMenu;
 
         [Space]
         [Header("Locomotion Settings")]
@@ -166,6 +172,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 moveAction.canceled += OnStopLocomotion;
             }
 
+            var pauseAction = GetInputAction(OpenMenu);
+            if (pauseAction != null)
+            {
+                pauseAction.performed += OnOpenMenu;
+            }
+
             var turnAction = GetInputAction(m_Turn);
             if (turnAction != null)
             {
@@ -203,6 +215,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             {
                 moveAction.performed -= OnStartLocomotion;
                 moveAction.canceled -= OnStopLocomotion;
+            }
+
+            var menuAction = GetInputAction(OpenMenu);
+            if (menuAction != null)
+            {
+                menuAction.performed -= OnOpenMenu;
             }
 
             var turnAction = GetInputAction(m_Turn);
@@ -243,6 +261,29 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 return;
 
             m_LocomotionUsers.Add(context.action);
+        }
+
+        [SerializeField]
+        [Tooltip("Instance of pausemenu.")]
+        GameObject PauseMenu;
+        void OnOpenMenu(InputAction.CallbackContext context)
+        {
+            if(PauseMenu != null)
+            {
+                if(PauseMenu.active == false)
+                {
+
+                    Debug.Log("Open Menu");
+                    PauseMenu.SetActive(true);
+                }
+                else
+                {
+                    Debug.Log("close Menu");
+                    PauseMenu.SetActive(false);
+
+                }
+
+            }
         }
 
         void OnStopLocomotion(InputAction.CallbackContext context)

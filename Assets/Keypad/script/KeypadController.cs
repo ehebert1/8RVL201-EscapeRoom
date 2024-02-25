@@ -15,6 +15,7 @@ public class KeypadController : MonoBehaviour
     [SerializeField] private TMP_Text codeDisplay;
     [SerializeField] private float resetTime = 1f;
     [SerializeField] private string SuccessText;
+    [SerializeField] private AudioSource audioBeep;
     [Space(5f)]
     [Header("Keypad Entry Events")]
     public UnityEvent onCorrectPassword;
@@ -23,11 +24,14 @@ public class KeypadController : MonoBehaviour
     private bool hasBeenUsed = false;
 
     public void UserNumberEntry(int selectedNumber)
-    {
+    {        
+        audioBeep.Play();
+
+
         if (inputPasswordList.Count >= passwordLength)
             return;
 
-        inputPasswordList.Add(selectedNumber);
+        inputPasswordList.Add(selectedNumber);        
 
         UpdateDisplay();
     }
@@ -44,7 +48,9 @@ public class KeypadController : MonoBehaviour
 
     public void DeleteEntry()
     {
-        if(inputPasswordList.Count > 0 && !hasBeenUsed)
+        audioBeep.Play();
+
+        if (inputPasswordList.Count > 0 && !hasBeenUsed)
         {
             inputPasswordList.RemoveAt(inputPasswordList.Count - 1);
             UpdateDisplay();
@@ -53,7 +59,9 @@ public class KeypadController : MonoBehaviour
 
     public void CheckPassword()
     {
-        if(correctPassword.Count == inputPasswordList.Count)
+        audioBeep.Play();
+
+        if (correctPassword.Count == inputPasswordList.Count)
         {
             for (int i = 0; i < correctPassword.Count; i++)
             {
@@ -99,5 +107,10 @@ public class KeypadController : MonoBehaviour
     private void SetDisplayColor(Color color)
     {
         codeDisplay.color = color;
+    }
+
+    public void AnimateButton(Animator animator)
+    {
+        animator.Play("keypressed", 0, 0.0f);
     }
 }

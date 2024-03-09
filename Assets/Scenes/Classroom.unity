@@ -1731,7 +1731,7 @@ Transform:
   m_Children:
   - {fileID: 1941214752}
   m_Father: {fileID: 0}
-  m_RootOrder: 71
+  m_RootOrder: 70
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &876638651
 PrefabInstance:
@@ -3213,7 +3213,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a023fa161b45c2645b4c3bf5c9556d03, type: 3}
       propertyPath: m_RootOrder
-      value: 69
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a023fa161b45c2645b4c3bf5c9556d03, type: 3}
       propertyPath: m_LocalScale.x
@@ -3290,7 +3290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3371939121048976319, guid: c49acc52cae126a468f7dfad465289fc, type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 3371939121048976319, guid: c49acc52cae126a468f7dfad465289fc, type: 3}
       propertyPath: m_LocalScale.x
@@ -3797,6 +3797,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2313404951967903222, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 265.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645685307750705887, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      propertyPath: m_text
+      value: Naptime Nightmares
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645685307750705887, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      propertyPath: m_fontSize
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645685307750705887, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 42
+      objectReference: {fileID: 0}
     - target: {fileID: 4592956391713993908, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_Name
       value: Complete XR Origin Set Up Variant
@@ -3807,7 +3823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7179462289238023466, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_RootOrder
-      value: 70
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 7179462289238023466, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3851,7 +3867,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2871854915733156396, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1655635479}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
 --- !u!4 &1632840199 stripped
@@ -3865,8 +3884,24 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1632840199}
     m_Modifications:
+    - target: {fileID: 841019759122494505, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 293.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813026439712142080, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
+      propertyPath: m_text
+      value: Naptime Nightmares
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813026439712142080, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
+      propertyPath: m_fontSize
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813026439712142080, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 42
+      objectReference: {fileID: 0}
     - target: {fileID: 6902990421566251161, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
       propertyPath: PauseMenu
       value: 
@@ -3889,7 +3924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7375601855365364797, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7375601855365364797, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
       propertyPath: m_LocalScale.x
@@ -3959,6 +3994,11 @@ PrefabInstance:
 --- !u!1 &1655635478 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7858981889492903559, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
+  m_PrefabInstance: {fileID: 1655635477}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1655635479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7375601855365364797, guid: c92d5b95c454ef644acb922ca0391916, type: 3}
   m_PrefabInstance: {fileID: 1655635477}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1662756394
@@ -5120,7 +5160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8767799530917179080, guid: 7f7cb634a13fb7f4f9cc5d9497f95003, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8767799530917179080, guid: 7f7cb634a13fb7f4f9cc5d9497f95003, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5248,7 +5288,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2080153226650808536, guid: a010c8777cf16e649a0a2f2281f78a21, type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 2080153226650808536, guid: a010c8777cf16e649a0a2f2281f78a21, type: 3}
       propertyPath: m_LocalPosition.x

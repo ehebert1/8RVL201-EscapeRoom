@@ -1954,14 +1954,13 @@ GameObject:
   - component: {fileID: 8809619425751024259}
   - component: {fileID: 4582610388036241072}
   - component: {fileID: 6902990421566251161}
-  - component: {fileID: 349523826051716869}
   m_Layer: 5
   m_Name: CoachingCardRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2435584302899905185
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2161,19 +2160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10677250b415b5f4eb45fc22315a16b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &349523826051716869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7479913325101035538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4960060fc4d76ec4fa6f9874818e0cd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PauseAction: {fileID: -3127391336768604895, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  PauseMenu: {fileID: 7479913325101035538}
 --- !u!1 &8002952212025370837
 GameObject:
   m_ObjectHideFlags: 0
@@ -3252,7 +3239,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalScale.x

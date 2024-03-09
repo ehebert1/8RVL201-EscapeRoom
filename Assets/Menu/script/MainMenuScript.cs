@@ -14,7 +14,7 @@ namespace Unity.VRTemplate
 
         public void PlayGame()
         {
-            Application.LoadLevel("SampleScene");
+            Application.LoadLevel("Classroom");
         }
     }
 }

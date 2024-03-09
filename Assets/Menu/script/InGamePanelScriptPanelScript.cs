@@ -23,7 +23,7 @@ namespace Unity.VRTemplate
         }
         public void PlayAgain()
         {
-            Application.LoadLevel("SampleScene");
+            Application.LoadLevel("Classroom");
         }
         public void BackToMainMenu()
         {

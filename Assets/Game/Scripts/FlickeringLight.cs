@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class FlickeringLight : MonoBehaviour
 {
-    public Light light;
     public GameObject screen;
     public int numberOfBlink = 2;
     public float blinkDuration = 0.5f;
@@ -25,12 +24,10 @@ public class FlickeringLight : MonoBehaviour
         {
             for (int i =0; i < numberOfBlink; i++)
             {
-                light.enabled = true;
                 screen.SetActive(true);
 
                 yield return new WaitForSeconds(blinkDuration);
 
-                light.enabled = false;
                 screen.SetActive(false);
                 yield return new WaitForSeconds(blinkDuration);    
             }

@@ -1045,7 +1045,7 @@ MonoBehaviour:
       - m_Target: {fileID: 6902990421566251161}
         m_TargetAssemblyTypeName: Unity.VRTemplate.InGamePanelScriptPanelScript,
           Assembly-CSharp
-        m_MethodName: Resume
+        m_MethodName: PlayAgain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3375,7 +3375,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_RootOrder
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6984c48aed9a154294088f4265d8478, type: 3}
       propertyPath: m_LocalScale.x

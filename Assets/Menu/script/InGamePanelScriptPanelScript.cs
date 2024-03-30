@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
+using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 namespace Unity.VRTemplate
 {
@@ -23,11 +25,11 @@ namespace Unity.VRTemplate
         }
         public void PlayAgain()
         {
-            Application.LoadLevel("Classroom");
+            SceneManager.LoadScene("Classroom");
         }
         public void BackToMainMenu()
         {
-            Application.LoadLevel("MainMenu");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

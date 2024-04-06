@@ -11,12 +11,10 @@ public class FlickeringLight : MonoBehaviour
     public float delayBetweenBlinks = 1.0f;
     public float delayBetweenCycles = 5.0f;
 
-    private void Start()
+    public void StartBlink()
     {
         StartCoroutine(Blink());
     }
-
-
 
     IEnumerator Blink()
     {

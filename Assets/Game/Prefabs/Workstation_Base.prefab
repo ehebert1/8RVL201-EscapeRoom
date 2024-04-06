@@ -1031,8 +1031,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4701346010192895441, guid: 707192d75334ed44cbc5bbb597906736, type: 3}
+      propertyPath: m_Name
+      value: interactible_screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701346010192895441, guid: 707192d75334ed44cbc5bbb597906736, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4744136477711746567, guid: 707192d75334ed44cbc5bbb597906736, type: 3}
       propertyPath: m_Range

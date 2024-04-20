@@ -1125,9 +1125,9 @@ Canvas:
   m_GameObject: {fileID: 159519712}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1632840200}
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -7416,6 +7416,11 @@ PrefabInstance:
 --- !u!4 &1632840199 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2871854915733156396, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+  m_PrefabInstance: {fileID: 1632840198}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1632840200 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2871854915733156393, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
   m_PrefabInstance: {fileID: 1632840198}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1635920905 stripped
